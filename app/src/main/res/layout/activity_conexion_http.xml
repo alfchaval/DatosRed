@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.usuario.red.ConexionHTTP">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="introduzca una url"
+       />
+
+    <EditText
+        android:id="@+id/edt_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://192.168.3.57/acceso/prueba.txt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
+
+            <RadioButton
+                android:id="@+id/rbtn_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Java"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:id="@+id/rbtn_apache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Apache"
+                android:layout_weight="1"
+                />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_conectar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conectar"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </WebView>
+
+    <TextView
+        android:id="@+id/txv_tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOL"
+        />
+
+</LinearLayout>
+

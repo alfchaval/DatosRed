@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Red</string>
+    <string name="ejercicio_1">Conexión http</string>
+    <string name="ejercicio_2">Conexión asíncrona</string>
+    <string name="ejercicio_3">Conexión Android AAHC.</string>
+    <string name="ejercicio_4">Conexión Volley</string>
+    <string name="ejercicio_5">Descarga de imágenes</string>
+    <string name="ejercicio_6">Subir archivos</string>
+</resources>
