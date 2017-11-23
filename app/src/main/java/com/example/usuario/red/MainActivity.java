@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn5 = (Button)findViewById(R.id.btn5);
         btn5.setOnClickListener(this);
         btn6 = (Button)findViewById(R.id.btn6);
-        btn5.setOnClickListener(this);
+        btn6.setOnClickListener(this);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, Descarga.class);
                 break;
             case R.id.btn6:
-                intent = new Intent(this, Subida.class);
+                intent = new Intent(this, SubidaFicheros.class);
                 break;
             default:
                 break;

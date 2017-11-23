@@ -4,7 +4,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.annotation.Nullable;
-import android.support.annotation.RestrictTo;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
@@ -33,7 +32,7 @@ public class ConexionAsincrona extends AppCompatActivity {
     }
 
     private void iniciar() {
-        edt_url = (EditText) findViewById(R.id.edt_url);
+        edt_url = (EditText) findViewById(R.id.edt_direccion_archivo);
         rbtn_java = (RadioButton) findViewById(R.id.rbtn_java);
         rbtn_apache = (RadioButton) findViewById(R.id.rbtn_apache);
         btn_conectar = (Button) findViewById(R.id.btn_conectar);
@@ -44,7 +43,7 @@ public class ConexionAsincrona extends AppCompatActivity {
                 TareaAsincrona tareaAsincrona = new TareaAsincrona();
                 if (rbtn_java.isChecked()) {
 
-                    //resultado = tareaAsincrona.execute(edt_url.getText().toString(), "JAVA");
+                    //resultado = tareaAsincrona.execute(edt_direccion_archivo.getText().toString(), "JAVA");
                     //webview.loadDataWithBaseURL(null, resultado.getMensaje(), "text/html", "UTF-8", null);
                 }
                 else {
@@ -61,7 +60,7 @@ public class ConexionAsincrona extends AppCompatActivity {
 
         @Override
         protected Resultado doInBackground(String... strings) {
-            //String edtUrl = edt_url.getText().toString();
+            //String edtUrl = edt_direccion_archivo.getText().toString();
             long inicio, fin;
             Resultado resultado;
             inicio = System.currentTimeMillis();

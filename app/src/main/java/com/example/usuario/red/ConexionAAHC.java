@@ -34,7 +34,7 @@ public class ConexionAAHC extends AppCompatActivity implements View.OnClickListe
     }
 
     private void iniciar() {
-        edt_url = (EditText) findViewById(R.id.edt_url);
+        edt_url = (EditText) findViewById(R.id.edt_direccion_archivo);
         btn_conectar = (Button) findViewById(R.id.btn_conectar);
         btn_conectar.setOnClickListener(this);
         webview = (WebView) findViewById(R.id.webview);

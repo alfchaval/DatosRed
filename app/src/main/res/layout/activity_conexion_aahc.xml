@@ -14,7 +14,7 @@
         />
 
     <EditText
-        android:id="@+id/edt_url"
+        android:id="@+id/edt_direccion_archivo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="http://192.168.3.57/acceso/prueba.txt"

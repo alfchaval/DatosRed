@@ -21,11 +21,8 @@ import com.android.volley.Response;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 
 import java.io.UnsupportedEncodingException;
-
-import cz.msebera.android.httpclient.Header;
 
 /**
  * Created by usuario on 11/7/17.
@@ -50,7 +47,7 @@ public class ConexionVolley extends AppCompatActivity implements View.OnClickLis
     }
 
     private void iniciar() {
-        edt_url = (EditText) findViewById(R.id.edt_url);
+        edt_url = (EditText) findViewById(R.id.edt_direccion_archivo);
         btn_conectar = (Button) findViewById(R.id.btn_conectar);
         btn_conectar.setOnClickListener(this);
         webview = (WebView) findViewById(R.id.webview);

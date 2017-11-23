@@ -19,7 +19,6 @@ import com.squareup.picasso.Picasso;
 import java.io.File;
 
 import okhttp3.OkHttpClient;
-import okhttp3.internal.http2.Header;
 
 /**
  * Created by usuario on 11/7/17.
@@ -85,7 +84,7 @@ public class Descarga extends Activity {
 
             @Override
             public void onStart() {
-
+                super.onStart();
             }
 
             @Override
